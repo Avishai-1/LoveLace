@@ -1,0 +1,1276 @@
+@media (max-width: 414px){
+
+    html, body{
+    width:100%;
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    }
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0px;
+    background-color:#333333;
+        
+    }
+header{
+    
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -10px;
+    padding-bottom: 0px;
+    position: relative;
+  
+}
+header h3{
+    padding-top: 10px;
+    padding-left: 30px;
+    
+}
+
+.menu-wrap .toggle{ 
+    position: fixed;
+    top:5px;
+    left: 210px;
+    z-index: 2;
+    height: 30px;
+    width: 130px;
+    opacity: 0;
+    padding: 0px;
+    margin: 0px;
+    transform: translate(90px);
+}
+
+
+.menu-wrap .hambuger{
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    display: flex;
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 15px;
+    z-index: 100;
+    padding: 10px 20px;
+    margin-left: -10px;
+    
+
+}
+.menu-wrap input{
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.menu-wrap .hambuger > div{
+    position: relative;
+    left: 260px;
+    height: 3px;
+    width: 140%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+   
+}
+.menu-wrap .hambuger>div:before,
+.menu-wrap .hambuger>div:after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    top: -10px
+}
+.menu-wrap .hambuger>div:after{
+    top:10px;
+    width: 10;
+}
+.menu-wrap .toggle:checked + .hambuger> div{
+    transform: rotate(134deg);
+}
+.menu-wrap .toggle:checked + .hambuger> :before{
+    visibility: hidden;
+}
+.menu-wrap .toggle:checked + .hambuger> div:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+.menu-wrap .menu ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    visibility: hidden;
+    
+}
+.menu-wrap .menu ul li{
+    padding-bottom: 20px;
+    position: relative;
+    left: 300px;
+    top: 240px;
+    font-size: 1.8rem;
+    left: 180px;
+    text-align: justify;
+    
+}
+
+.menu-wrap .menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-wrap .current a{
+    position: relative;
+    right: -7px;
+}
+header .menu-wrap .toggle:checked  ~ .menu ul{
+    visibility: visible;
+    background-color: gray;
+    position: relative;
+    width: 1000px;
+    height: 200vh;
+    margin-top: -120px;
+    margin-left: -30px;
+    z-index: 1;
+ 
+}
+.small{
+    font-weight: 200;
+}
+.landing{
+    background: url(bruce-mars-DBGwy7s3QY0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin-top: 5px;
+    margin-left: -100px;
+    display: flex;
+    width: auto;
+    flex-direction: column; 
+    align-content: flex-end;
+    justify-content: space-between; 
+    border-bottom: 5px solid lightseagreen;
+}
+.landing div h1{
+    float: right;
+    padding-right: 15px;
+    font-size: 1.9rem;
+}
+.landing div h5{
+    float: right;
+    
+}
+.landing .music{
+   margin-top: -50px;
+   font-size: 14px;
+   color: white;
+   padding-right: 42px;
+   line-height: 1;
+   font-weight: 100;
+}
+.landing .SignUp{
+  padding-top: 50px;
+  font-size: 14px;
+  color: white;
+  padding-right: 10px;
+  font-weight: 500;
+}
+.landing .SignUp h5{
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.landing .btn{
+    font-size: 1rem;
+    margin-left: 285px;
+    padding-bottom: 80px; 
+}
+.landing .btn a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 3px 10px;
+    background-color: black;
+    border-radius: 40px;
+    border: none;
+}
+
+.landing .btn input{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.lists{
+    margin-top: -23px;
+}
+.center h5{
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding-top: 15px;
+}
+.PISTEUO{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.PISTEUO .dolapo{
+    width: 50px;
+}
+.PISTEUO #icon{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+    cursor: pointer;
+}
+.PISTEUO #icon{
+    margin: -20px;
+}
+.PISTEUO h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.PISTEUO p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 60vh;
+}
+.PISTEUO .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+
+
+.emmanuel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.emmanuel .adeola{
+    width: 50px;
+}
+.emmanuel #iconThird{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+}
+.emmanuel #iconThird{
+    margin: -20px;
+}
+.emmanuel h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.emmanuel p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 60vh;
+}
+.emmanuel .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+.StepByStep{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.StepByStep .david{
+    width: 50px;
+}
+.StepByStep #iconFour{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+}
+.StepByStep #iconFour{
+    margin: -20px;
+    cursor: pointer;
+}
+.StepByStep h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.StepByStep p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 60vh;
+}
+.StepByStep .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+
+.byeBye{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.byeBye .dolapo{
+    width: 50px;
+}
+.byeBye #iconTwo{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+    cursor: pointer;
+}
+.byeBye #iconTwo{
+    margin: -20px;
+}
+.byeBye h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.PISTEUO p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 55vh;
+}
+.byeBye .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    color: #F0B700;
+    font-size: 2.1rem;
+}
+section p{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-top: -4px;
+    padding: 5px 50px;
+}
+input{
+    padding:15px 30px;
+    border-radius: 20px;
+    border: none;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+input .btn{
+    margin: 40px;
+}
+textarea{
+    border-radius: 30px;
+    border: none;
+}
+section h5{
+    color: #F0B700;
+    font-weight: normal;
+}
+.submit input{
+    display: none;
+}
+.btn #submit{
+    background-color: #F0B700;
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: white;
+    border:none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    }
+}    
+  
+@media (max-width: 420px){
+
+    html, body{
+    width:100%;
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    }
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0px;
+    background-color:#333333;
+        
+    }
+header{
+    
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -10px;
+    padding-bottom: 0px;
+    position: relative;
+  
+}
+header h3{
+    padding-top: 10px;
+    padding-left: 30px;
+    
+}
+
+.menu-wrap .toggle{ 
+    position: fixed;
+    top:5px;
+    left: 210px;
+    z-index: 2;
+    height: 30px;
+    width: 130px;
+    opacity: 0;
+    padding: 0px;
+    margin: 0px;
+    transform: translate(90px);
+}
+
+
+.menu-wrap .hambuger{
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    display: flex;
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 15px;
+    z-index: 100;
+    padding: 10px 20px;
+    margin-left: -10px;
+    
+
+}
+.menu-wrap input{
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.menu-wrap .hambuger > div{
+    position: relative;
+    left: 260px;
+    height: 3px;
+    width: 140%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+   
+}
+.menu-wrap .hambuger>div:before,
+.menu-wrap .hambuger>div:after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    top: -10px
+}
+.menu-wrap .hambuger>div:after{
+    top:10px;
+    width: 10;
+}
+.menu-wrap .toggle:checked + .hambuger> div{
+    transform: rotate(134deg);
+}
+.menu-wrap .toggle:checked + .hambuger> :before{
+    visibility: hidden;
+}
+.menu-wrap .toggle:checked + .hambuger> div:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+.menu-wrap .menu ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    visibility: hidden;
+    
+}
+.menu-wrap .menu ul li{
+    padding-bottom: 20px;
+    position: relative;
+    left: 300px;
+    top: 240px;
+    font-size: 1.8rem;
+    left: 180px;
+    text-align: justify;
+    
+}
+
+.menu-wrap .menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-wrap .current a{
+    position: relative;
+    right: -7px;
+}
+.menu-wrap .toggle:checked  ~ .menu ul{
+    visibility: visible;
+    background-color: gray;
+    position: relative;
+    width: 1000px;
+    height: 200vh;
+    margin-top: -100px;
+    margin-left: -10px;
+    z-index: 1;
+ 
+}
+.small{
+    font-weight: 200;
+}
+.landing{
+    background: url(bruce-mars-DBGwy7s3QY0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin-top: 5px;
+    margin-left: -100px;
+    display: flex;
+    width: auto;
+    flex-direction: column; 
+    align-content: flex-end;
+    justify-content: space-between; 
+    border-bottom: 5px solid lightseagreen;
+}
+.landing div h1{
+    float: right;
+    padding-right: 15px;
+    font-size: 1.9rem;
+}
+.landing div h5{
+    float: right;
+    
+}
+.landing .music{
+   margin-top: -50px;
+   font-size: 14px;
+   color: white;
+   padding-right: 42px;
+   line-height: 1;
+   font-weight: 100;
+}
+.landing .SignUp{
+  padding-top: 50px;
+  font-size: 14px;
+  color: white;
+  padding-right: 10px;
+  font-weight: 500;
+}
+.landing .SignUp h5{
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.landing .btn{
+    font-size: 1rem;
+    margin-left: 285px;
+    padding-bottom: 80px; 
+}
+.landing .btn a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 3px 10px;
+    background-color: black;
+    border-radius: 40px;
+    border: none;
+}
+
+.landing .btn input{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.lists{
+    margin-top: -23px;
+}
+.center h5{
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding-top: 15px;
+}
+.PISTEUO{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.PISTEUO .dolapo{
+    width: 50px;
+}
+.PISTEUO #icon{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+    cursor: pointer;
+}
+.PISTEUO #icon{
+    margin: -20px;
+}
+.PISTEUO h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.PISTEUO p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 60vh;
+}
+.PISTEUO .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+
+
+.emmanuel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.emmanuel .adeola{
+    width: 50px;
+}
+.emmanuel #iconThird{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+}
+.emmanuel #iconThird{
+    margin: -20px;
+}
+.emmanuel h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.emmanuel p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 60vh;
+}
+.emmanuel .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+.StepByStep{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.StepByStep .david{
+    width: 50px;
+}
+.StepByStep #iconFour{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+}
+.StepByStep #iconFour{
+    margin: -20px;
+    cursor: pointer;
+}
+.StepByStep h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.StepByStep p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 60vh;
+}
+.StepByStep .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+
+.byeBye{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: -20px;
+}
+.byeBye .dolapo{
+    width: 50px;
+}
+.byeBye #iconTwo{
+    width: 100px;
+    margin-top: -15px;
+    padding-right: -80px;
+    cursor: pointer;
+}
+.byeBye #iconTwo{
+    margin: -20px;
+}
+.byeBye h5{
+    margin-left: -95px;
+    padding-bottom: 15px;
+    line-height: 0.8;
+    font-weight: 600;
+}
+.PISTEUO p{
+    font-size: 10px;
+}
+.containerTwo{
+    background-color: #333333;
+    height: 55vh;
+}
+.byeBye .smaller{
+    font-size: 8px;
+    color: #F0B700;
+    font-weight: 200;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    color: #F0B700;
+    font-size: 2.1rem;
+}
+section p{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-top: -4px;
+    padding: 5px 50px;
+}
+input{
+    padding:15px 30px;
+    border-radius: 20px;
+    border: none;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+input .btn{
+    margin: 40px;
+}
+textarea{
+    border-radius: 30px;
+    border: none;
+}
+section h5{
+    color: #F0B700;
+    font-weight: normal;
+}
+.submit input{
+    display: none;
+}
+.btn #submit{
+    background-color: #F0B700;
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: white;
+    border:none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    }
+}    
+  
+
+
+   @media (min-width: 420px){
+
+        html, body{
+        width:100%;
+        height: 100%;
+        margin:0px;
+        padding:0px;
+        overflow-x: hidden;
+        }
+
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0%;
+        margin: 0px;
+        background-color:#333333;
+            
+        }
+    header{
+        
+        height: 40px;
+        margin-top: -20px;
+        margin-left: -10px;
+        padding-bottom: 0px;
+        position: relative;
+      
+    }
+    header h3{
+        padding-top: 10px;
+        padding-left: 30px;
+        
+    }
+
+    .menu-wrap .toggle{ 
+        position: fixed;
+        top:5px;
+        left: 210px;
+        z-index: 2;
+        height: 30px;
+        width: 130px;
+        opacity: 0;
+        padding: 0px;
+        margin: 0px;
+        transform: translate(90px);
+    }
+
+    
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 15px;
+        left: 110px;
+        display: flex;
+        flex: 0;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 15px;
+        z-index: 100;
+        padding: 10px 20px;
+        margin-left: -10px;
+        
+
+    }
+    .menu-wrap input{
+        width: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .menu-wrap .hambuger > div{
+        position: relative;
+        left: 260px;
+        height: 3px;
+        width: 140%;
+        background-color:black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+       
+    }
+    .menu-wrap .hambuger>div:before,
+    .menu-wrap .hambuger>div:after{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        top: -10px
+    }
+    .menu-wrap .hambuger>div:after{
+        top:10px;
+        width: 10;
+    }
+    .menu-wrap .toggle:checked + .hambuger> div{
+        transform: rotate(134deg);
+    }
+    .menu-wrap .toggle:checked + .hambuger> :before{
+        visibility: hidden;
+    }
+    .menu-wrap .toggle:checked + .hambuger> div:after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    .menu-wrap .menu ul{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        list-style: none;
+        margin-top: 20px;
+        text-decoration: none;
+        margin-left: 10px;
+        visibility: hidden;
+        
+    }
+    .menu-wrap .menu ul li{
+        padding-bottom: 20px;
+        position: relative;
+        left: 300px;
+        top: 240px;
+        font-size: 1.8rem;
+        left: 180px;
+        text-align: justify;
+        
+    }
+
+    .menu-wrap .menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu-wrap .current a{
+        position: relative;
+        right: -7px;
+    }
+    .menu-wrap .toggle:checked  ~ .menu ul{
+        visibility: visible;
+        background-color: gray;
+        position: relative;
+        width: 1000px;
+        height: 200vh;
+        margin-top: -100px;
+        margin-left: -10px;
+        z-index: 1;
+       
+    }
+    .small{
+        font-weight: 200;
+    }
+    .landing{
+        background: url(bruce-mars-DBGwy7s3QY0-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        margin-top: 5px;
+        margin-left: -100px;
+        display: flex;
+        width: auto;
+        flex-direction: column; 
+        align-content: flex-end;
+        justify-content: space-between; 
+        border-bottom: 5px solid lightseagreen;
+    }
+    .landing div h1{
+        float: right;
+        padding-right: 15px;
+        font-size: 1.9rem;
+    }
+    .landing div h5{
+        float: right;
+        
+    }
+    .landing .music{
+       margin-top: -50px;
+       font-size: 14px;
+       color: white;
+       padding-right: 42px;
+       line-height: 1;
+       font-weight: 100;
+    }
+    .landing .SignUp{
+      padding-top: 50px;
+      font-size: 14px;
+      color: white;
+      padding-right: 10px;
+      font-weight: 500;
+    }
+    .landing .SignUp h5{
+        font-weight: 500;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .landing .btn{
+        font-size: 1rem;
+        margin-left: 285px;
+        padding-bottom: 80px; 
+    }
+    .landing .btn a{
+        color: white;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 3px 10px;
+        background-color: black;
+        border-radius: 40px;
+        border: none;
+    }
+
+    .landing .btn input{
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    .lists{
+        margin-top: -23px;
+    }
+    .center h5{
+        text-align: center;
+        font-weight: 400;
+        color: white;
+        padding-top: 15px;
+    }
+    .PISTEUO{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        margin-top: -20px;
+    }
+    .PISTEUO .dolapo{
+        width: 50px;
+    }
+    .PISTEUO #icon{
+        width: 100px;
+        margin-top: -15px;
+        padding-right: -80px;
+        cursor: pointer;
+    }
+    .PISTEUO #icon{
+        margin: -20px;
+    }
+    .PISTEUO h5{
+        margin-left: -95px;
+        padding-bottom: 15px;
+        line-height: 0.8;
+        font-weight: 600;
+    }
+    .PISTEUO p{
+        font-size: 10px;
+    }
+    .containerTwo{
+        background-color: #333333;
+        height: 60vh;
+    }
+    .PISTEUO .smaller{
+        font-size: 8px;
+        color: #F0B700;
+        font-weight: 200;
+    }
+
+
+    .emmanuel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        margin-top: -20px;
+    }
+    .emmanuel .adeola{
+        width: 50px;
+    }
+    .emmanuel #iconThird{
+        width: 100px;
+        margin-top: -15px;
+        padding-right: -80px;
+    }
+    .emmanuel #iconThird{
+        margin: -20px;
+    }
+    .emmanuel h5{
+        margin-left: -95px;
+        padding-bottom: 15px;
+        line-height: 0.8;
+        font-weight: 600;
+    }
+    .emmanuel p{
+        font-size: 10px;
+    }
+    .containerTwo{
+        background-color: #333333;
+        height: 60vh;
+    }
+    .emmanuel .smaller{
+        font-size: 8px;
+        color: #F0B700;
+        font-weight: 200;
+    }
+    .StepByStep{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        margin-top: -20px;
+    }
+    .StepByStep .david{
+        width: 50px;
+    }
+    .StepByStep #iconFour{
+        width: 100px;
+        margin-top: -15px;
+        padding-right: -80px;
+    }
+    .StepByStep #iconFour{
+        margin: -20px;
+        cursor: pointer;
+    }
+    .StepByStep h5{
+        margin-left: -95px;
+        padding-bottom: 15px;
+        line-height: 0.8;
+        font-weight: 600;
+    }
+    .StepByStep p{
+        font-size: 10px;
+    }
+    .containerTwo{
+        background-color: #333333;
+        height: 60vh;
+    }
+    .StepByStep .smaller{
+        font-size: 8px;
+        color: #F0B700;
+        font-weight: 200;
+    }
+
+    .byeBye{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        margin-top: -20px;
+    }
+    .byeBye .dolapo{
+        width: 50px;
+    }
+    .byeBye #iconTwo{
+        width: 100px;
+        margin-top: -15px;
+        padding-right: -80px;
+        cursor: pointer;
+    }
+    .byeBye #iconTwo{
+        margin: -20px;
+    }
+    .byeBye h5{
+        margin-left: -95px;
+        padding-bottom: 15px;
+        line-height: 0.8;
+        font-weight: 600;
+    }
+    .PISTEUO p{
+        font-size: 10px;
+    }
+    .containerTwo{
+        background-color: #333333;
+        height: 55vh;
+    }
+    .byeBye .smaller{
+        font-size: 8px;
+        color: #F0B700;
+        font-weight: 200;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section h1{
+        color: #F0B700;
+        font-size: 2.1rem;
+    }
+    section p{
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        margin-top: -4px;
+        padding: 5px 50px;
+    }
+    input{
+        padding:15px 30px;
+        border-radius: 20px;
+        border: none;
+        margin-top: -40px;
+        margin-bottom: 20px;
+    }
+    input .btn{
+        margin: 40px;
+    }
+    textarea{
+        border-radius: 30px;
+        border: none;
+    }
+    section h5{
+        color: #F0B700;
+        font-weight: normal;
+    }
+    .submit input{
+        display: none;
+    }
+    .btn #submit{
+        background-color: #F0B700;
+        padding: 10px 15px;
+        margin-top: 15px;
+        color: white;
+        border:none;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+}

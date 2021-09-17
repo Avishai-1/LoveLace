@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <header>
+            <div>
+                <h3></h3>
+            </div>
+        <div class="menu-wrap">
+                <input type="checkbox" class="toggle">
+                <div class="hambuger"><div></div></div>
+                <div class="menu">
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li> 
+                        <li><a href="sign.html">Sign up</a></li> 
+                        <li><a href="contact.html">Contact</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+    <form id="form">
+            <div class = "head">
+                <h1>LOVE<span class="small">LACE</span></h1>
+                <div id="msg"></div>
+            </div>
+            <div class = "btn">
+                <h5>Enter Full Name</h5>
+                <input type="Name" id="username" placeholder="Enter name" required>
+            </div>
+            <div class = "btn">
+                <h5>Enter Email</h5>
+                <input type="email" id="email" placeholder="Enter Email"  required>
+            </div>
+            <div class = "btn">
+                <h5>Enter password</h5>            
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+            <div class = "signUp"> 
+                <button id="valid">Sign up</button>
+            </div>
+        <form>
+  
+    <script>
+        var form = document.getElementById('form');
+
+        form.addEventListener ('submit', function(event){
+            event.preventDefault();
+            
+            var username = document.getElementById('username').value
+
+            console.log (username);
+
+            var email = document.getElementById('email').value
+
+            console.log(email)
+
+            var password = document.getElementById('password').value
+            
+            console.log (password)
+        })
+    
+    </script>
+</body>
+</html>
